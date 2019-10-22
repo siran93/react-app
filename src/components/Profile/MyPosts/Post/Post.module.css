@@ -1,0 +1,63 @@
+
+.send_post:before,
+.send_post:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.send_post * {
+    border: none;
+}
+.send_post *:focus {
+    outline: none;
+    box-shadow: none;
+}
+.send_post h2 {
+    text-transform: capitalize;
+}
+.send_post textarea {
+    width: 100%;
+    background-color: rgba(192, 192, 192, .5);
+    height: 50px;
+    border-radius: 5px;
+    resize: none;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.send_post button {
+    background-color: orangered;
+    float: right;
+    color: #fff;
+    text-transform: lowercase;
+    padding: 5px 30px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.post_replies {
+    margin-top: 20px;
+}
+ .reply_item {
+    padding: 10px 30px;
+    border-bottom: 1px solid rgba(192, 192, 192, .5);
+}
+ .reply_item:before,
+ .reply_item:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.reply_item:last-child {
+    border-bottom: 0;
+}
+ .reply_item .avatar_bg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: orange;
+    float: left;
+}
+ .reply_item p {
+    float: left;
+    padding: 5px 0 0 20px;
+    margin: 0;
+}
