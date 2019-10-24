@@ -1,0 +1,31 @@
+.content{
+    background-color: #fff;
+}
+.content .cover_photo img {
+    max-width: 100%;
+}
+
+.content .avatar_desc {
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+}
+
+.content .avatar_desc .avatar {
+}
+
+.content .avatar_desc .avatar img {
+    width: 100%;
+}
+
+.content .avatar_desc .desc {
+    padding-left: 20px;
+}
+
+.content .avatar_desc .desc h2 {
+    margin-top: 0;
+}
+
+.content .avatar_desc .desc p {
+    margin: 0 0 7px;
+}
