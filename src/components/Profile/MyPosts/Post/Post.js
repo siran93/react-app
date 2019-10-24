@@ -1,10 +1,10 @@
+import style from './Post.module.css';
 import React from 'react';
-import s from './Post.module.css';
 
 const Post = (props) => {
     return (
-        <div className={s.reply_item}>
-            <div className={s.avatar_bg}/>
+        <div className={style.reply_item}>
+            <div className={style.avatar_bg}/>
             <p>{props.postText}</p>
         </div>
     )

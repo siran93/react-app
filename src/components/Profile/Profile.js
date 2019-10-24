@@ -1,11 +1,11 @@
-import React from 'react';
 import ProfileInfo from './ProfileInfo/ProfileInfo';
 import MyPosts from './../Profile/MyPosts/MyPosts';
-import profile from './Profile.module.css'
+import style from './Profile.module.css'
+import React from 'react';
 
 const Profile = () => {
     return (
-        <div className={profile.content}>
+        <div className={style.content}>
            <ProfileInfo/>
            <MyPosts/>
         </div>
