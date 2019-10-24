@@ -1,0 +1,28 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+}
+
+.dialog_items {
+
+}
+
+.dialog_items .item {
+
+}
+
+.dialog_items .item a {
+    color: #000;
+}
+
+.dialog_items .item a.active {
+    font-weight: bold;
+}
+
+.dialog_messages {
+
+}
+
+.dialog_messages .item {
+
+}

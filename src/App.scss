@@ -1,15 +1,14 @@
+body{
+  background-color: #ebebf8;
+}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-@mixin clearFix {
-  &:before, &:after {
-    content: '';
-    display: table;
-    clear: both;
-  }
+a {
+  text-decoration: none;
 }
 
 .app-wrapper {
@@ -22,113 +21,8 @@
   grid-gap: 10px;
 }
 
-.header {
-  grid-area: header;
-  background-color: orange;
-  img {
-    width: 50px;
-    margin-top: 5px;
-    margin-left: 10px;
-  }
-}
-
-.nav {
-  grid-area: nav;
-  background-color: #008aff;
-  padding: 20px 10px;
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    a {
-      color: #fff;
-      text-decoration: none;
-    }
-  }
-}
-
-.content {
+.app-wrapper-content {
   grid-area: content;
-  .cover-photo {
-    img {
-      max-width: 100%;
-    }
-  }
-  .avatar-desc {
-    padding: 10px 0;
-    @include clearFix;
-    .avatar {
-      float: left;
-      img {
-        width: 200px;
-      }
-    }
-    .desc {
-      float: left;
-      h2 {
-        margin-top: 0;
-      }
-      p {
-        margin: 0 0 7px;
-      }
-    }
-  }
-  .posts {
-    .send-post {
-      @include clearFix;
-      * {
-        border: none;
-        &:focus {
-          outline: none;
-          box-shadow: none;
-        }
-      }
-      h2 {
-        text-transform: capitalize;
-      }
-      textarea {
-        width: 100%;
-        background-color: rgba(#C0C0C0, .5);
-        height: 50px;
-        border-radius: 5px;
-        resize: none;
-        padding: 5px;
-        margin-bottom: 10px;
-      }
-      button {
-        background-color: orangered;
-        float: right;
-        color: #fff;
-        text-transform: lowercase;
-        padding: 5px 30px;
-        border-radius: 4px;
-        font-weight: bold;
-      }
-    }
-    .post-replies {
-      margin-top: 20px;
-      .reply-item {
-        @include clearFix;
-        padding: 10px 30px;
-        border-bottom: 1px solid rgba(#C0C0C0, .5);
-        &:last-child{
-          border-bottom: 0;
-        }
-        .avatar-bg {
-          width: 50px;
-          height: 50px;
-          border-radius: 50%;
-          background-color: orange;
-          float: left;
-        }
-        p {
-          float: left;
-          padding: 5px 0 0 20px;
-          margin: 0;
-        }
-      }
-    }
-  }
-
+  background-color: #fff;
+  padding: 20px;
 }
-

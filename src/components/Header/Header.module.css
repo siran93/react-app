@@ -1,10 +1,16 @@
 .header {
     grid-area: header;
     background-color: orange;
+    box-shadow: 0 0 5px silver;
 }
 .header img {
     width: 50px;
     margin-top: 5px;
     margin-left: 10px;
 }
- 
+.header p{
+    float: right;
+    margin-right: 10px;
+    color: #fff;
+    font-weight: bold;
+}
