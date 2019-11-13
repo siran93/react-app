@@ -5,7 +5,7 @@ const Post = (props) => {
     return (
         <div className={style.reply_item}>
             <div className={style.avatar_bg}/>
-            <p>{props.postText}</p>
+            <p>{props.message}</p>
         </div>
     )
 }
